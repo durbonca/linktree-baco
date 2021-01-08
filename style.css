@@ -55,6 +55,7 @@ html {
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
     background: white;
     text-decoration: none;
+    outline: none;
 }
 
 .links {
@@ -75,4 +76,31 @@ html {
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: -28px;
+    transition: opacity .25s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.time {
+    display: inline;
+}
+
+.display {
+    margin-bottom: 12px;
+    height: auto;
+    opacity: 1;
 }
